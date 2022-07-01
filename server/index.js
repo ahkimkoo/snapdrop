@@ -12,7 +12,8 @@ process.on('SIGTERM', () => {
 })
 
 const parser = require('ua-parser-js');
-const { uniqueNamesGenerator, animals, colors } = require('unique-names-generator');
+const genName = require('./gen-name.js');
+const { animals, colors } = require('unique-names-generator');
 
 class SnapdropServer {
 
@@ -223,13 +224,7 @@ class Peer {
         if(!deviceName)
             deviceName = 'Unknown Device';
 
-        const displayName = uniqueNamesGenerator({
-            length: 2,
-            separator: ' ',
-            dictionaries: [colors, animals],
-            style: 'capital',
-            seed: this.id.hashCode()
-        })
+        const displayName = genName.gen(2,false,8);
 
         this.name = {
             model: ua.device.model,
