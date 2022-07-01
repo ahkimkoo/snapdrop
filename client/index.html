@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <!-- Web App Config -->
-    <title>你传</title>
+    <title>你传-跨平台点对点传输文件</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="theme-color" content="#3367d6">
     <meta name="color-scheme" content="dark light">
     <meta name="apple-mobile-web-app-capable" content="no">
     <meta name="apple-mobile-web-app-title" content="你传">
     <!-- Descriptions -->
-    <meta name="description" content="局域网跨平台点对点传输文件">
+    <meta name="description" content="跨平台点对点传输文件最便捷的方式，不用安装不用注册，打开网页即可使用。">
     <meta name="keywords" content="文件, 传输, 分享, 点对点">
     <!-- Icons -->
     <link rel="icon" sizes="96x96" href="images/favicon-96x96.png">
@@ -32,12 +32,12 @@
                 <use xlink:href="#info-outline" />
             </svg>
         </a>
-        <a href="#" id="theme" class="icon-button" title="Switch Darkmode/Lightmode" >
+        <a href="#" id="theme" class="icon-button" title="切换日间/夜间模式" >
             <svg class="icon">
                 <use xlink:href="#icon-theme" />
             </svg>
         </a>
-        <a href="#" id="notification" class="icon-button" title="Enable Notifications" hidden>
+        <a href="#" id="notification" class="icon-button" title="开启通知" hidden>
             <svg class="icon">
                 <use xlink:href="#notifications" />
             </svg>
@@ -77,7 +77,7 @@
                     <input type="checkbox" id="autoDownload" checked="">
                 </div>
                 <div class="row-reverse">
-                    <a class="button" close id="download" title="Download File" autofocus>保存</a>
+                    <a class="button" close id="download" title="下载文件" autofocus>保存</a>
                     <button class="button" close>忽略</button>
                 </div>
             </x-paper>
@@ -89,7 +89,7 @@
             <x-background class="full center">
                 <x-paper shadow="2">
                     <h3>发送消息</h3>
-                    <div id="textInput" class="textarea" role="textbox" placeholder="Send a message" autocomplete="off" autofocus contenteditable></div>
+                    <div id="textInput" class="textarea" role="textbox" placeholder="输入消息" autocomplete="off" autofocus contenteditable></div>
                     <div class="row-reverse">
                         <button class="button" type="submit" close>发送</button>
                         <a class="button" close>取消</a>
